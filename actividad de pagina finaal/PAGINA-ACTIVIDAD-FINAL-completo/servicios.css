@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    background-color:  #bb5d05bd;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    background-color: #bb5d05bd; 
+    border-radius: 50px; 
+    color: #000000; 
+    padding: 20px; 
+    text-align: center; 
+    -webkit-text-stroke: 6px rgba(77, 46, 1, 0.5) ;
+    font-size: 24px; 
+    font-weight: bold; 
+    border: 5px solid rgba(77, 46, 1, 0.5);
+}
+
+
+
+.services {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: calc(33.33% - 20px);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.service h2 {
+    color: #333;
+}
+
+.service p {
+    color: #666;
+}
+
+.service-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.caja {
+    width: 99%;
+    height: 10%;
+    background-color: rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 20px; 
+    border: 6px solid rgba(129, 73, 8, 0.548);
+}
+.caja2 {
+    width: 99%;
+    height: 10%;
+    background-color: rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 20px; 
+    border: 6px solid rgba(129, 73, 8, 0.548);
+}
+.caja3 {
+    width: 99%;
+    height: 10%;
+    background-color: rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 20px; 
+    border: 6px solid rgba(129, 73, 8, 0.548);
+}
+
+

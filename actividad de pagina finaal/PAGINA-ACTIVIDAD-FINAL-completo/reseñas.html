@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas</title>
+    <link rel="stylesheet" href="reseñas.css"> 
+</head>
+<body>
+    <header>
+        <h1>Reseñas</h1>
+    </header>
+    <div class="caja1">
+    <section class="reseñas1">
+        <article class="reseña1">
+            <h2>MARIANA MENDOZA</h2>
+            <p>Me encanto el servicio personal muy capacitado y a la orden me voy contenta con mi mascota</p>
+          
+            <p>20/1/22</p>
+        </article>
+
+        <article class="reseña2">
+            <h2>JOSE MARTINES</h2>
+            <p>Me ubiera gustado mas velocidad en la atencion , por lo demas perfecto</p>
+            
+            <p>3/7/23</p>
+        </article>
+
+        <article class="reseña3">
+            <h2>MARIANO BIÑOLES</h2>
+            <p>Atencion exelente y multiples servicios a la orden rapidos y faciles</p>
+            
+            <p>3/12/23</p>
+    </section>
+    </div>
+
+    <section class="agregar-reseña">
+        <h2>Añadir Reseña</h2>
+        <form action="procesar_reseña.php" method="post">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+            <label for="contenido">Contenido:</label>
+            <textarea id="contenido" name="contenido" rows="4" required></textarea>
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+            <button type="submit">Enviar Reseña</button>
+        </form>
+    </section>
+</body>
+</html>

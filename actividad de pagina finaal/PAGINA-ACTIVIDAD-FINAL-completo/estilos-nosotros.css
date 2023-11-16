@@ -1,0 +1,64 @@
+
+header {
+    background-color: #bb5d05bd; 
+    border-radius: 50px; 
+    color: #000000; 
+    padding: 20px; 
+    text-align: center; 
+    -webkit-text-stroke: 6px rgba(77, 46, 1, 0.5) ;
+    font-size: 24px; 
+    font-weight: bold; 
+    border: 5px solid rgba(77, 46, 1, 0.5);
+}
+
+main {
+    padding: 20px;
+    
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.caja {
+    width: 80%;
+    height: 10%;
+    background-color: rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 20px; 
+    border: 6px solid rgba(129, 73, 8, 0.548);
+}
+
+.caja img {
+    width: 30%; 
+    height: 30%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+body {
+    background-color: rgba(216, 132, 6, 0.747);
+}
+.caja2 {
+    width: 100%;
+    height: 10%;
+    background-color:  rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px rgba(77, 46, 1, 0.5);
+    text-align: left;
+    line-height: 20px; 
+}
+.caja3 {
+    width: 100%;
+    height: 10%;
+    background-color:  rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 2px rgba(77, 46, 1, 0.5);
+    text-align: left;
+    line-height: 20px; 
+}

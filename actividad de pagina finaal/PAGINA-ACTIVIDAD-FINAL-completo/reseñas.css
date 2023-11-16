@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color:#bb5d05bd;;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #bb5d05bd; 
+    border-radius: 50px; 
+    color: #000000; 
+    padding: 2px; 
+    text-align: center; 
+    -webkit-text-stroke: 6px rgba(77, 46, 1, 0.5) ;
+    font-size: 24px; 
+    font-weight: bold; 
+    border: 5px solid rgba(77, 46, 1, 0.5);
+}
+.caja1 {
+    width: 99%;
+    height: 10%;
+    background-color: rgba(161, 89, 6, 0.548);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    line-height: 20px; 
+    border: 6px solid rgba(129, 73, 8, 0.548);
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.reseñas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.reseña1 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.reseña2  {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.reseña3 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+
+.agregar-reseña {
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.agregar-reseña h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+.agregar-reseña label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.agregar-reseña input[type="text"],
+.agregar-reseña textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.agregar-reseña button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.agregar-reseña button:hover {
+    background-color: #555;
+}

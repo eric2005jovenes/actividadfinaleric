@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>Registro</title>
+</head>
+<body>
+    <section id="registroForm">
+        <h1>Registro</h1>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="genero">Género:</label>
+            <select id="genero" name="genero">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <button type="button" onclick="guardarDatos()">Registrar</button>
+        </form>
+    </section>
+
+<script>
+    function guardarDatos() {
+        var nombre = document.getElementById('nombre').value;
+        var apellidos = document.getElementById('apellidos').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var genero = document.getElementById('genero').value;
+
+        // Verifica si ya hay usuarios en localStorage
+        var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+        // Agrega el nuevo usuario
+        usuarios.push({
+            nombre: nombre,
+            apellidos: apellidos,
+            email: email,
+            password: password,
+            genero: genero
+        });
+
+        // Guarda en localStorage
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+        // Guarda también el último usuario registrado
+        localStorage.setItem('usuario', JSON.stringify({
+            nombre: nombre,
+            apellidos: apellidos,
+            email: email,
+            password: password,
+            genero: genero
+        }));
+
+        // Redirige a la página de inicio de sesión
+        window.location.href = "login.html";
+    }
+</script>
+</body>
+</html>
+
