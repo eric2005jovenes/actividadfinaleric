@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM CARPINCHO</title>
+    <link rel="stylesheet" href="pagina.css">
+  
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+     <!-- Llamada al scriptINICIO.js -->
+     
+     <script src="js/login.js"></script>
+
+        </ul>
+    </nav>
+   
+    <script>
+        /* Funcion para iniciar sesion */
+function iniciarSesion() {
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+
+    var usuarios = JSON.parse(localStorage.getItem('usuarios'));
+
+    var usuario = usuarios.find(function (u) {
+        return u.email === email && u.password === password;
+    });
+
+    if (usuario) {
+        alert('Inicio de sesión exitoso');
+        
+        // Muestra en la consola el usuario que se está guardando
+        console.log('Usuario guardado:', usuario);
+        
+        // Guarda el usuario en localStorage
+        localStorage.setItem('usuario', JSON.stringify(usuario));
+
+        // Redirigir a la página principal
+        window.location.href = "index.html";
+    } else {
+        alert('Correo electrónico o contraseña incorrectos');
+    }
+}
+
+    </script>
+    <header>
+        <div class="banner">
+            <h1>TEAM CARPINCHO</h1>
+        </div>
+    </header>
+    
+    <section id="bienvenida">
+        
+        <!-- Menú para usuarios autenticados -->
+        <div id="menu-usuario" style="display: none;">
+            <span id="mensaje-bienvenida"></span>
+            <div id="opciones-usuario" style="display: none;">
+                <button onclick="cerrarSesion()" class="button">Cerrar Sesión</button>
+            </div>
+        </div>
+        
+
+        <!-- Menú para visitantes no autenticados -->
+        <div id="menu-visitante" style="display: block;">
+            <p id="mensaje-bienvenida">¡Bienvenido, Usuario!</p>
+            <a href="login.html" class="button">Iniciar Sesión</a>
+            <a href="signup.html" class="button">Registrarse</a>
+            <a href="reseñas.html">Ver reseñas</a>
+            <a href="precios-pagina.html">Ver productos y precios</a>
+            <a href="nosotros.html">Nosotros</a>
+          </div>
+
+
+</html>
